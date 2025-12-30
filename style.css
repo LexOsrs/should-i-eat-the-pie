@@ -1,3 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+html {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+}
 .title-row {
   display: flex;
   align-items: center;
@@ -59,6 +69,7 @@
 }
 
 #waitUnit {
+#waitUnit {
   min-width: 70px;
   font-size: 1em;
   padding: 6px 8px;
@@ -66,6 +77,49 @@
   border: 1.5px solid #d1d5db;
   background: #f8fafc;
   transition: border 0.2s;
+}
+
+input:focus-visible, select:focus-visible {
+  outline: 2px solid #7db7e8;
+  outline-offset: 2px;
+}
+@media (prefers-color-scheme: dark) {
+  html {
+    background: linear-gradient(135deg, #23272f 0%, #3a4252 100%);
+  }
+  body {
+    color: #eee;
+  }
+  .card {
+    background: #23272f;
+    color: #eee;
+  }
+  .inputs {
+    border-left: 5px solid #3a4252;
+  }
+  .results {
+    border-left: 5px solid #2e7d4f;
+  }
+  .explore-warning {
+    background: #3a4252;
+    color: #ffe58f;
+    border-color: #bfae5a;
+  }
+  .loss {
+    color: #ffb3b3;
+    background: #4a2323;
+  }
+  .gain {
+    color: #b7eac7;
+    background: #234a2e;
+  }
+  .subtitle {
+    color: #b7bac7;
+  }
+  footer {
+    color: #aaa;
+  }
+}
 }
 
 #waitUnit:focus {
@@ -79,14 +133,12 @@
   color: #555;
   margin-left: 2px;
 }
-/* FarmRPG Apple Pie Stamina Calculator Styles */
 
 body {
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-  min-height: 100vh;
   font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
   margin: 0;
   color: #222;
+  min-height: 100%;
 }
 
 .container {
