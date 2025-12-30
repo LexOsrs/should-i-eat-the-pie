@@ -1,0 +1,249 @@
+.title-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+.title-row h1 {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0 2px;
+}
+.pie-icon {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  display: block;
+}
+@media (max-width: 600px) {
+  .pie-icon {
+    width: 28px;
+    height: 28px;
+  }
+  .title-row {
+    gap: 8px;
+  }
+}
+.explore-warning {
+  background: #fffbe6;
+  color: #8a6d1b;
+  border: 1.5px solid #ffe58f;
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-bottom: 14px;
+  font-size: 1.04em;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.row-group {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 8px;
+}
+.half-width {
+  flex: 1 1 0;
+  min-width: 0;
+}
+.wait-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#waitAmount {
+  width: 70px;
+}
+
+#waitUnit {
+  min-width: 70px;
+  font-size: 1em;
+  padding: 6px 8px;
+  border-radius: 7px;
+  border: 1.5px solid #d1d5db;
+  background: #f8fafc;
+  transition: border 0.2s;
+}
+
+#waitUnit:focus {
+  border-color: #7db7e8;
+  outline: none;
+}
+
+#waitUnitLabel {
+  min-width: 48px;
+  font-size: 1em;
+  color: #555;
+  margin-left: 2px;
+}
+/* FarmRPG Apple Pie Stamina Calculator Styles */
+
+body {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  margin: 0;
+  color: #222;
+}
+
+.container {
+  max-width: 480px;
+  margin: 36px auto 0 auto;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.subtitle {
+  font-size: 1.04em;
+  color: #4a5568;
+  text-align: center;
+  margin-bottom: 22px;
+  margin-top: 0;
+}
+
+.card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08), 0 1.5px 4px rgba(0,0,0,0.04);
+  padding: 18px 16px 14px 16px;
+  margin-bottom: 18px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.inputs {
+  border-left: 5px solid #b0b7c3;
+}
+
+.results {
+  border-left: 5px solid #b7eac7;
+}
+
+
+.input-group {
+  margin-bottom: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+
+.input-group input {
+  padding: 7px 10px;
+  border: 1.5px solid #d1d5db;
+  border-radius: 7px;
+  font-size: 1rem;
+  margin-bottom: 1px;
+  background: #f8fafc;
+  transition: border 0.2s;
+}
+
+.input-group input:disabled {
+  background: #f1f5f9;
+  color: #888;
+  border-style: dashed;
+}
+
+.input-group input:focus {
+  border-color: #7db7e8;
+  outline: none;
+}
+
+.input-group small {
+  color: #6b7280;
+  font-size: 0.92em;
+  margin-top: 0;
+}
+
+.result-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 10px;
+}
+
+.result-label {
+  font-size: 1.05em;
+}
+
+.result-value {
+  font-size: 1.25em;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.loss {
+  color: #b94a4a;
+  background: #fbeaea;
+  border-radius: 6px;
+  padding: 2px 8px;
+}
+
+.gain {
+  color: #2e7d4f;
+  background: #eafbee;
+  border-radius: 6px;
+  padding: 2px 8px;
+}
+
+footer {
+  margin-top: 18px;
+  text-align: center;
+  color: #888;
+  font-size: 0.97em;
+}
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 98vw;
+    padding: 8px;
+  }
+  .card {
+    padding: 14px 6px 12px 10px;
+  }
+  h1 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 700px) {
+  .container {
+    max-width: 600px;
+    padding: 10px 0 0 0;
+  }
+  .card {
+    padding: 12px 18px 10px 18px;
+    margin-bottom: 12px;
+  }
+  .input-group {
+    margin-bottom: 8px;
+  }
+  .result-row {
+    margin-bottom: 6px;
+  }
+  h1 {
+    font-size: 2.1rem;
+    margin-bottom: 4px;
+  }
+  .subtitle {
+    font-size: 1.08em;
+    margin-bottom: 14px;
+  }
+}
